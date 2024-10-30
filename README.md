@@ -63,10 +63,10 @@ docker run --name jaeger -d --network=kong-net \
 
 
 # To Tear down
-# docker kill kong-gateway
-# docker kill kong-database
-# docker kill jaeger
-# docker container rm kong-gateway
-# docker container rm kong-database
-# docker container rm jaeger
-# docker network rm kong-net
+docker kill kong-gateway
+docker kill kong-database
+docker kill jaeger
+docker container rm kong-gateway
+docker container rm kong-database
+docker container rm jaeger
+docker network rm kong-net
